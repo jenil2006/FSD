@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> form1</title>
+    </head>
+    <body>
+        <form action="h1.html" method="get">
+            <fieldset>
+              <legend>
+                signup
+              </legend>
+              <table>
+                <tr>
+                    <td>name</td>
+                    <td><input type="text" name="fname" required></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                    <td>
+                        <label><input type="radio" name="gender" checked value="male">Male</label>
+                        <label> <input type="radio" name="gender" value="female">female</label>
+                        <label><input  type="radio" name="other" value="other">other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>subject</td>
+                    <td>
+                        <label><input type="checkbox" name="sub" checked value="fsd">FSD</label>
+                        <label> <input type="checkbox" name="sub" value="python">PYTHON</label>
+                        <label><input  type="checkbox" name="sub" value="maths">MATHS</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                     <td><input type="range" min="0 " max="1000" step="100" oninput="num.value=this.value">
+                    <input type="text" disabled id="num" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>upload file</td>
+                    <td><input type="file" multiple></td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td><input type="date" min="2024-10-11"></td>
+                </tr>
+                <tr>
+                    <td>address</td>
+                    <td><textarea rows="20" cols="20" placeholder="xyz"></textarea></td>
+                </tr>
+                <tr>
+                    <td> area</td>
+                    <td><select>
+                        <option selected hidden>select area</option>
+                        <optgroup label="ahmedabad">
+                            <option>m</option>
+                            <option>b</option>
+                            <option>c</option>
+                        </optgroup>
+                        <optgroup label="gandhinagar">
+                            <option>x</option>
+                            <option>y</option>
+                            <option>z</option>
+                        </optgroup>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+              </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
