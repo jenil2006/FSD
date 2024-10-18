@@ -1,0 +1,20 @@
+<!-- tag: <frameset></frameset> should be in body tag if body tag is defined before frameset tag 
+                                if frameset tag is defined before body then body content wont show only
+                                 frameset will show
+tag: <frame> -->
+
+<!-- eigther 0 or 1: frameborder -->
+ <!-- framespacing : space b/w two frames
+ cols =30% , *(*=denotes remaining (ie. 70%))  
+ if col = 20% , *,*,* (here *=denotes remaining (ie. 20 ,26,26,26(remaining) ))
+ -->
+<frameset frameborder ="1"  rows ="50%,30%,*" border ="20">
+    <frame src ="a.png" name ="frame1"/>
+        <frameset frameborder ="1" cols ="30%,*" border ="40"  framespacing ="50" noresize>
+                <frame src ="pizza.html" scrolling ="no"/>
+                <frame src="f3.html">
+        </frameset>
+
+    <frame src ="car.png" name ="frame2">
+</frameset>
+

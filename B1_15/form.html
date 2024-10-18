@@ -1,0 +1,88 @@
+<!--HTML form-->
+<form action ="#" method = "get" enctype ="multipart/form-data">
+
+
+    <fieldset>
+        <legend align ="center">LJU FORM</legend>
+        <label for ="uname">USER NAME</label>
+        <input type="text" id="uname" maxlength="10" minlength="5" placeholder="enter username "
+         autofocus autocomplete name="uname" value="abcde" required disabled readonly />
+         
+        </br>
+        </br>
+    
+         <!-- label -->
+    
+        <label for="pass">Password</label>
+        <input type="password" name = "pass" id ="pass"/>
+        </br>
+        </br>
+        Email <input type="email" required />
+        </br>
+        </br>
+        Age <input type="number" min =15 max =58 name="age" size="38"/>
+        </br>
+        </br>
+        Price <input type="range" value="50" min="10" max="200" step="5" name="price"  oninput="num.value= this.value"/>
+            <input type="text" id="num" disabled>
+        </br>
+        </br>
+        
+
+        <!-- radio button and checkbox -->
+         <label >Gender:</label>
+         <input type="radio" name="gender" value="male"/>Male
+         <input type="radio" name="gender" value="female" checked/>Female
+        </br>
+        </br>
+        
+        Subject: <input type="checkbox" name="subject" value="FSD">FSD1 
+        <input type="checkbox" name="subject" value="python1">Python1
+        <input type="checkbox" name="subject" value="PS">PS 
+        </br>
+        </br>
+        
+        <!-- DATE OF BIRTH : yyyy mm dd-->
+        DOB <input type="date" name="dob" min="2000-10-01" max="2024-01-01">    
+        </br>
+        </br>
+        <!-- search -->
+        Search <input type="search" name="?" />
+        <br>
+        <br>
+        <!-- dropdown -->
+        Department <select name="dept" >
+            <option value="" selected hidden disabled>select Department/option</option>
+            <optgroup label="computer">
+                <option value="cse">CSE</option>
+                <option value="cst">CST</option>
+                <option value="csd">CSD</option>
+            </optgroup>
+            <optgroup label="mechanical">
+                <option value="cad">CAD</option>
+                <option value="cam">CAM</option>
+            </optgroup>
+        </select>   
+        <br>
+        <br>
+
+        UPLOAD CV <input type="file" name="f1" multiple/>
+        
+        <!-- text area -->
+         <br> <br>
+        <textarea rows="10" cols="12" name="comments">add comments</textarea>
+        <br><br>
+        <input type="image" src="s1.png" alt="bin" width="200" height="100"/>
+        <br>
+        <br>
+        <input type="button" value="button type"/><br><br>
+        <input type="reset" value="reset data"/><br>
+        <br>
+        <button type="submit">submit button </button>
+        
+
+        </br>
+        </br>
+         <input type="submit" value="submit data"/>
+    </fieldset>
+    </form>

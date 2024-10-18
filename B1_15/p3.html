@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--paragraph -->
+<! DOCTYPE html>
+
+<html>
+<head>
+
+<title> pro3 </title>
+
+</head>
+
+<body> 
+<h1>Heading 1</h1> <!-- 32 px =2 em !-->
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<BR/><a id = "test" > Header </a><!-- reference will be given to id other than name-->
+<BR/><a name = "test" > Header </a>
+
+<!-- paraghraph tag-->
+<p title = "Hyper Markup Language"> HTML </p>
+<p> This is <br/>
+         an example 
+         of paragraph </p><!--wont same as written need BR tag for new line -->
+<!-- preformated tag-->
+<pre>this 
+is an example
+of preformated tag
+</pre><!-- same as written-->
+
+<!-- Data formating tags-->
+<b>Bold text</b><BR/>
+<strong>Strong / bold text</strong><BR/>
+<i> Italic Text</i><BR/>
+<em> Emphass Text </em>
+<h4><b>( a + b ) <sup>2</sup> </b>= <del>a <sup>2</sup> + ab + b<sup>2</sup></del><u><i>a <sup>2</sup> + 2ab + b<sup>2</sup></i></u> </h4>
+
+<!-- anchor tag (a) for adding links-->
+<!-- hyper reference = href-->
+<a href ="#">
+<a href ="https://www.google.com" target ="_blank"> click me </a>
+
+<!-- header - name -->
+<BR/><a href = "#test" > Scroll to top TIL TEST </a>
+
+<!---Image tag -->
+<img src = "a.png" alt ="test image " width ="300" height = "300" align ="right" border ="5">
+
+
+<!--Lists 1 ordered list 2 unordered list-->
+<ul type ="disc/square/circle/none">
+<li>Test1 </li>
+<li>Test2 </li>
+<li>Test3 </li>
+
+</ul>
+
+<!--nested list -->
+<ul type ="disc/square/circle/none">
+<li>Test1 </li>
+<li>Test2 </li>
+	<ul type = "circle">
+	<li> test 2.1</li>
+	<li> test 2.2</li>
+	</ul>
+<li>Test3 </li>
+
+</ul>
+
+<!--ordered list-->
+<ol type ="a" start ="28">
+<li>P1</li>
+<li>P2</li>
+</ol>
+
+
+
+
+<!--List example-->
+
+<ol type ="A" start ="4">
+<li>List 1</li>
+<li>List 2</li>
+	<ul type ="square">
+	<li>List 2.1</li>
+	<li>List 2.2</li>
+		<ol type ="i" reversed >
+			<li>List 2.2.1</li>
+			<li>List 2.2.2</li>
+			<li>List 2.2.3</li>
+		</ol>
+	<li>List 2.3</li>
+	</ul>
+<li>List 3</li>
+	<ul type ="none">
+	<li>List 3.1</li>
+	<li>List 3.2</li>
+	</ul>
+<li> List 4</li>
+	<ol type = "a">
+		<li>List 4.1</li>
+		<ul type = "circle">
+		<li>List 4.1.1</li>
+		<li>List 4.1.2</li>
+		</ul>
+		<li>List 4.2</li>
+	</ol>
+</ol>
+
+
+
+<!--Defination list -->
+<dl>
+
+	<dt> HTML </dt>
+	<dd>Hyper text markup language lorem Ipsum....</dd>
+	<dt> CSS </dt>
+	<dd>Cascading Style Sheets </dd>
+	
+	
+</dl>
+
+
+ <!--Table tag-->
+ <table width ="50%" align ="center" bgcolor ="pink" cellpadding ="10" cellspacing ="5" border = "5"  >
+ <caption>Table 1</caption>
+ <thead>
+	<tr><th> Name </th><th> Price </th></tr>
+ </thead>
+ <tbody>
+	<tr><td> A </td> <td> 200 </td></tr>
+	<tr><td> B </td> <td> 300 </td></tr>
+ </tbody>
+ <tfoot>
+	<tr><td> <b> Total </b> </td> <td> <b>500</b> </td></tr>
+ </tfoot>
+ </table>
+
+
+<!--row span-->
+<table border ="2" cellpadding ="10" rules ="all">
+
+<tr>
+	<td rowspan ="2"> A </td>
+	<td> B </td>
+</tr>
+<tr>
+	<td> C </td>
+</tr>
+
+</table>
+
+
+<!--col span-->
+<table border ="2" cellpadding ="10" >
+
+<tr>
+	<td colspan ="2" bgcolor ="yellow"> A </td>
+</tr>
+<tr>
+	<td> B </td>
+
+	<td> C </td>
+</tr>
+
+</table>
+
+
+
+<!--row span-->
+<table border ="3" width ="50%" align = "center" cellpadding ="10"  cellspacing="5">
+<caption><font size ="5"> Table </font></caption>
+<tr>
+	<td rowspan ="2" bgcolor ="yellow"> A </td>
+	<td bgcolor ="light green"> B </td>
+	<td rowspan ="3" bgcolor ="yellow" > D </td>
+	<td colspan ="2" bgcolor ="pink" > E </td>
+	<td bgcolor ="lightblue" > F </td>
+	
+</tr>
+<tr>
+	<td bgcolor ="lightblue"> C </td>
+	<td rowspan ="2" bgcolor ="lightblue"> G </td>
+	<td rowspan ="2" bgcolor ="lightgreen"> H </td>
+	<td rowspan ="2" bgcolor ="yellow"> I </td>
+</tr>
+
+<tr>
+	<td colspan ="2" bgcolor ="pink"> J </td>
+
+</tr>
+<tr>
+	<td colspan ="3" bgcolor ="lightgreen"> K </td>
+	<td bgcolor ="yellow"> L </td>
+	<td colspan ="2" bgcolor ="pink"> M </td>
+</tr>
+
+</table>
+
+<!--HTML form-->
+<form action ="#" method = "get" enctype ="multipart/form-data">
+
+
+<fieldset>
+	<legend align ="center">LJU FORM</legend>
+	<label for ="uname">USER NAME</label>
+	<input type="text" id="uname" maxlength="10" minlength="5" placeholder="enter username "
+	 autofocus autocomplete name="uname" value="abcde" required disabled readonly />
+	 <input type="submit" value="submit data"/>
+	</br>
+	</br>
+
+	 <!-- label -->
+
+	<label for="pass">Password</label>
+	<input type="password" name = "pass" id ="pass"/>
+
+
+</fieldset>
+
+
+
+</body>
+</html>
